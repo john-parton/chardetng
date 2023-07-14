@@ -3235,7 +3235,6 @@ mod tests {
         det.feed(bytes, true);
         let enc = det.guess(None, false);
         let (decoded, _) = enc.decode_without_bom_handling(bytes);
-        println!("{:?}", decoded);
         assert_eq!(enc, encoding);
     }
 
